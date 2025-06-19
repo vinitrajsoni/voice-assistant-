@@ -1,5 +1,5 @@
 import streamlit as st
-from st_audiorec import st_audiorec
+from streamlit_audio_recorder import audio_recorder
 from config import AUDIO_FILE
 from audio_utils import save_audio_from_browser, text_to_speech
 from bulbul_voice import transcribe_with_sarvam
@@ -12,7 +12,7 @@ st.markdown("Ask anything from your documents - via Voice or Text!")
 qa_chain = load_qa_chain()
 
 # --- Record Voice via Browser ---
-audio_bytes = st_audiorec()
+audio_bytes = audio_recorder()
 if audio_bytes:
     save_audio_from_browser(audio_bytes, AUDIO_FILE)
     st.audio(AUDIO_FILE, format="audio/wav")
