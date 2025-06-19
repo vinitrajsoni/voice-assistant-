@@ -1,5 +1,7 @@
-streamlit==1.26.0
-streamlit-audio-recorder
+streamlit
+streamlit-webrtc
+numpy
+scipy
 pydub
 requests
 langchain
