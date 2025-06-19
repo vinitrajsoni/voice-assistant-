@@ -1,19 +1,8 @@
-# Core packages
-streamlit
-st-audiorec
+streamlit==1.26.0
+streamlit-audio-recorder
 pydub
 requests
-
-# LangChain + Gemini
 langchain
 google-generativeai
-protobuf<4  # prevent version issues with Google Generative AI
-
-# Audio processing
-ffmpeg-python
-
-# Environment
+faiss-cpu
 python-dotenv
-
-# Optional but useful
-tqdm
